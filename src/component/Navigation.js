@@ -1,22 +1,18 @@
+import React from 'react';
+import './Navigation.css'; // Import the CSS file for styling
+import Avatar from './Avatar'; // Import the Avatar component
 
-import Avatar from 'react-avatar';
-import './Navigation.css'
-
-
-const Navigation = () => {
+const Navigation = ({ username, onSignOut }) => {
     return (
-      <div>
-        <nav className='container'>
-          <div className='navbar'>
-            <span style={{color:"white"}}>
-              Welcome Aayushi
-            </span>
-            <Avatar googleId="118096717852922241760" size="80" round={true} />
-          </div>
+        <nav className="navbar">
+            <div className="navbar-left">
+<span>Welcome Sidharth</span>
+            </div>
+            <div className="navbar-right">
+                <Avatar username={username} onSignOut={onSignOut} />
+            </div>
         </nav>
-      </div>
-    )
-  }
-  
-  export default Navigation
-  
+    );
+};
+
+export default Navigation;

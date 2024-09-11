@@ -16,9 +16,6 @@ const Home = () => {
     const [form,setForm] = useState(true)
 
 
-
-    
-
       
 
     const handleSubmit = (e) => {
@@ -202,6 +199,58 @@ const Home = () => {
                         placeholder="Rate from 1 to 5"
                         required
                     />
+                     <label for="Fin-Literacy">What is your financial literacy?</label>
+                    <input
+                        type="radio"
+                        name="finLiteracy"
+                        id="none"
+                        value="finliteracy"
+                        checked={finLiteracy === "none"}
+                        onChange={(e) =>
+                            setFinLiteracy(e.target.value)
+                        }
+                    />
+                    None
+                    <input
+                        type="radio"
+                        value={finLiteracy}
+                        id=""
+                        checked={finLiteracy === "beginner"}
+                        onChange={(e) =>
+                            setFinLiteracy(e.target.value)
+                        }
+                    />
+                Beginner
+                <input
+                        type="radio"
+                        value={finLiteracy}
+                        id=""
+                        checked={finLiteracy === "limited"}
+                        onChange={(e) =>
+                            setFinLiteracy(e.target.value)
+                        }
+                    />
+                Limited
+                <input
+                        type="radio"
+                        value={finLiteracy}
+                        id=""
+                        checked={finLiteracy === "moderate"}
+                        onChange={(e) =>
+                            setFinLiteracy(e.target.value)
+                        }
+                    />
+                Moderate
+                <input
+                        type="radio"
+                        value={finLiteracy}
+                        id=""
+                        checked={finLiteracy === "extensive"}
+                        onChange={(e) =>
+                            setFinLiteracy(e.target.value)
+                        }
+                    />
+                Extensive
 
                     <label for="firstname">
                      What is your risk apetite?

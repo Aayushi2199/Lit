@@ -7,10 +7,17 @@ import Tabs from '../component/Tabs';
 
 const Portfolio = () => {
 
+
+    const handleSignOut = () => {
+        // Handle sign-out logic
+        console.log('Signing out...');
+    };
+
+
   return (
     <div >
       <div className='w-full h-10  pt-10'>
-<Navigation/>
+<Navigation username="Siddharth Phukane" onSignOut={handleSignOut} />
 <Tabs/>
       </div>
     </div>
