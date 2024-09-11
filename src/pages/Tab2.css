@@ -1,0 +1,78 @@
+.Tab2 {
+    text-align: center;
+  }
+  
+
+/* Styles for the card container */
+.card-container {
+    width: 100%; /* Adjust width as needed */
+    
+    padding: 20px; /* Padding inside the card */
+    background-color: white; /* White background for the card */
+    border-radius: 8px; /* Rounded corners for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the card */
+    display: flex; /* Flexbox for internal layout */
+    flex-direction: column; /* Stack elements vertically */
+    gap: 20px; /* Space between sections */
+}
+
+/* Styles for the chart container */
+.chart-container {
+    display: flex; /* Use flexbox to layout children */
+    flex-direction: column; /* Stack elements vertically */
+    gap: 20px; /* Space between sections */
+}
+
+/* Styles for the charts section */
+.charts {
+    display: flex; /* Use flexbox to layout children */
+    gap: 20px; /* Space between pie charts */
+}
+
+/* Styles for individual pie chart */
+.pie-chart {
+    flex: 1; /* Allow charts to grow and shrink equally */
+    background-color: white; /* White background for pie charts */
+    padding: 20px; /* Padding inside each chart container */
+    border-radius: 8px; /* Rounded corners for charts */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Shadow for charts */
+}
+
+/* Styles for the lower section (table and bar chart) */
+.lower-section {
+    display: flex; /* Use flexbox to layout children */
+    gap: 20px; /* Space between table and bar chart */
+}
+
+/* Styles for table container */
+.table-container {
+    flex: 1; /* Allow table to grow and shrink equally */
+    background-color: white; /* White background for table */
+    padding: 20px; /* Padding inside table container */
+    border-radius: 8px; /* Rounded corners for table container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Shadow for table container */
+}
+
+/* Styles for table */
+table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+table th, table td {
+    padding: 12px; /* Padding inside table cells */
+    border: 1px solid #ddd; /* Light border for table cells */
+}
+
+table th {
+    background-color: #f4f4f4; /* Background color for header cells */
+    text-align: left; /* Align text to the left */
+}
+
+.bar-chart {
+    flex: 1; /* Allow bar chart to grow and shrink equally */
+    background-color: white; /* White background for bar chart */
+    padding: 20px; /* Padding inside bar chart container */
+    border-radius: 8px; /* Rounded corners for bar chart container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Shadow for bar chart container */
+}

@@ -80,3 +80,13 @@ textarea {
     min-height: 100px;
     max-height: 150px;
 }
+
+.Column, Row {
+    display: flex;
+  }
+  .Row {
+    flex-direction: row;
+  }
+  .Column {
+    flex-direction: column;
+  }

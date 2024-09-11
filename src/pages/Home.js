@@ -1,5 +1,9 @@
 import { React, useState } from "react";
 import './home.css'
+import PieChart from "../component/pieChart";
+import { CChart } from "@coreui/react-chartjs";
+import Portfolio from "./Portfolio";
+
 
 const Home = () => {
     const [firstName, setFirstName] = useState("");
@@ -9,6 +13,13 @@ const Home = () => {
     const [goals, setGoals] = useState([]);
     const [finLiteracy, setFinLiteracy] = useState("");
     const [apetite, setApetite] = useState("");
+    const [form,setForm] = useState(true)
+
+
+
+    
+
+      
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -21,6 +32,7 @@ const Home = () => {
             finLiteracy,
             apetite
         );
+        setForm(false);
     };
 
     const handleSubjectChange = (sub) => {
@@ -41,6 +53,7 @@ const Home = () => {
     };
 
     return (
+        form ?
         <div className="App">
             <h1>Questionnaire</h1>
             <fieldset>
@@ -240,7 +253,14 @@ const Home = () => {
                     </button>
                 </form>
             </fieldset>
-        </div>
+        </div>:<>
+        <div className="column">
+    <div className="row">
+      <Portfolio/>
+    </div>
+  </div>
+        </>
+        
     );
 }
 
