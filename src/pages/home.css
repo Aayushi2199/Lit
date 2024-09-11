@@ -1,92 +1,154 @@
-* Filename - App.css */
-/* It containds the Form and Page Styling*/
+/* Updated Styling for App.css */
 
+/* General body styling */
 body {
-    background: #f3f3f3;
+    background: #f0f4f7;
     text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
 .App {
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    padding: 10px 20px;
-    transition: transform 0.2s;
-    width: 500px;
-    text-align: center;
-    margin: auto;
-    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    padding: 20px 25px;
+    transition: transform 0.3s ease-in-out;
+    width: 450px; /* Reduced width to fit the screen better */
+    margin: 20px auto;
+    text-align: left; /* Make sure form is left-aligned */
+}
+
+.App:hover {
+    transform: scale(1.02); /* Small hover effect */
 }
 
 h1 {
-    font-size: x-large;
-    text-align: center;
+    font-size: 24px;
+    text-align: left; /* Heading aligned to the left */
     color: #327c35;
+    margin-bottom: 20px;
 }
 
 fieldset {
     border: none;
 }
 
+/* Improved input field spacing and alignment */
 input {
     display: block;
     width: 100%;
-    /* margin-bottom: 15px; */
-    padding: 8px;
-    box-sizing: border-box;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    font-size: 12px;
-}
-input[type="radio"],
-input[type="checkbox"] {
-    display: inline;
-    width: 10%;
-}
-select {
-    display: block;
-    width: 100%;
-    margin-bottom: 15px;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 10px; /* Reduced margin-bottom to decrease form height */
+}
+
+input:focus {
+    border-color: #327c35;
+    outline: none;
+    box-shadow: 0 0 8px rgba(50, 124, 53, 0.3);
+}
+
+/* Align checkboxes and radio buttons with text on the right */
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+    margin-bottom: 5px; /* Reduced margin to save space */
 }
 
 label {
-    font-size: 15px;
+    font-size: 14px;
     display: block;
-    width: 100%;
-    margin-top: 8px;
+    margin-top: 10px;
     margin-bottom: 5px;
-    text-align: left;
-    color: #555;
+    text-align: left; /* Ensures labels are left aligned */
+    color: #333;
     font-weight: bold;
 }
 
+/* Checkbox list alignment - Adjusted for two per line */
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 5px; /* Spacing between checkbox items */
+    margin-top: 5px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    width: 45%; /* Each checkbox item takes up about half the width of the container */
+    margin-bottom: 5px; /* Reduced spacing between checkboxes */
+}
+
+.checkbox-item input {
+    margin-right: 10px;
+}
+
+select {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
 button {
-    padding: 15px;
-    border-radius: 10px;
-    margin: 15px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin: 10px 0; /* Reduced margin to save space */
     border: none;
     color: white;
     cursor: pointer;
-    background-color: #4caf50;
-    width: 40%;
+    background-color: #327c35;
+    width: 48%; /* Adjusted width to make buttons inline */
     font-size: 16px;
-}
-textarea {
-    resize: none;
-    width: 98%;
-    min-height: 100px;
-    max-height: 150px;
+    transition: background-color 0.2s ease-in-out;
+    display: inline-block;
+    margin-right: 4%; /* Spacing between buttons */
 }
 
-.Column, Row {
-    display: flex;
-  }
-  .Row {
-    flex-direction: row;
-  }
-  .Column {
-    flex-direction: column;
-  }
+button:last-child {
+    margin-right: 0; /* Remove margin for the last button */
+}
+
+button:hover {
+    background-color: #285a28;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    min-height: 120px;
+    max-height: 200px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 600px) {
+    .App {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+        width: 100%; /* Make buttons full width on smaller screens */
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
