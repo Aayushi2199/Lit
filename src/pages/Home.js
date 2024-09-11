@@ -222,7 +222,7 @@ const Home = () => {
             placeholder="Rate from 1 to 5"
             required
           /> */}
-          <label for="firstname">What is your risk apetite?</label>
+          <label for="firstname">What is the maximum loss you are willing to tolerate in a single year?</label>
           <input
             type="radio"
             name="riskApetite"
@@ -230,7 +230,7 @@ const Home = () => {
             checked={quesData.riskApetite === "Low"}
             onChange={handleInputChange}
           />
-          Low (0-5%)
+          0-5%
           <input
             type="radio"
             name="riskApetite"
@@ -238,7 +238,7 @@ const Home = () => {
             checked={quesData.riskApetite === "Medium"}
             onChange={handleInputChange}
           />
-          Medium (6-20%)
+          6-20%
           <input
             type="radio"
             name="riskApetite"
@@ -246,7 +246,7 @@ const Home = () => {
             checked={quesData.riskApetite === "High"}
             onChange={handleInputChange}
           />
-          High
+          >20%
           <button type="reset" value="reset" onClick={() => handleReset()}>
             Reset
           </button>

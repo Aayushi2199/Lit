@@ -31,7 +31,7 @@ const pieData2 = {
 };
 
 const pieData3 = {
-    labels: ['ACAP', 'America', 'Emea'],
+    labels: ['Mahindra MF', 'INVESCO', 'DWS'],
     datasets: [
         {
             label: 'Pie Chart 3',

@@ -9,31 +9,32 @@ const Tab1 = () => {
         <div className="main-container">
                
          <div className="list-container">
-        <h2>Asset Class</h2>
+        <h2>Your risk apetite is : High</h2>
         <ul>
-            <li>Home loans</li>
-            <li>Education Bonds</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-            <li>Item 1</li>
-            <li>Item 2</li>
+        <h3>Asset classes we recommend for investment: </h3>
+            <li>Stocks</li>
+            <li>Index Funds</li>
+            <li>Crypto Currencies</li>
+            <li>Derivatives</li>
         </ul>
     </div>
     <div className="two-column-list-container">
-        <h2>Portfolio</h2>
+        <h2>Available products for investment</h2>
         <div className="two-column-list">
             <div className="column">
                 <ul>
-                    <li>Column 1 - Item 1</li>
-                    <li>Column 1 - Item 2</li>
-                    <li>Column 1 - Item 3</li>
+                    <h3>Product Name</h3>
+                    <li>Product - Direct Equity</li>
+                    <li>Product - Equity Mutual Funds</li>
+                    <li>Product - Hybrid</li>
                 </ul>
             </div>
             <div className="column">
                 <ul>
-                    <li>Column 2 - Item 1</li>
-                    <li>Column 2 - Item 2</li>
-                    <li>Column 2 - Item 3</li>
+                    <h3>Product Asset Class</h3>
+                    <li>Stocks</li>
+                    <li>Stocks and Mutual Funds</li>
+                    <li>Commodities and Crypto Currencies</li>
                 </ul>
             </div>
         </div>
