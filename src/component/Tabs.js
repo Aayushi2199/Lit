@@ -26,7 +26,11 @@ const Tabs = () => {
             <div className="tab-content">
                 {activeTab === 'tab1' && <div className="tab-panel"><Tab1/></div>}
                 {activeTab === 'tab2' && <div className="tab-panel"><Tab2/></div>}
+                <button className="fancy-button">
+            Start Investing
+        </button>
             </div>
+            
         </div>
     );
 };

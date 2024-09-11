@@ -7,6 +7,7 @@ const Tab1 = () => {
    return (
       <div >
         <div className="main-container">
+            
                
          <div className="list-container">
         <h2>Your risk apetite is : High</h2>
@@ -36,10 +37,14 @@ const Tab1 = () => {
                     <li>Stocks and Mutual Funds</li>
                     <li>Commodities and Crypto Currencies</li>
                 </ul>
+                
             </div>
+            
         </div>
+        
     </div>
       </div>
+     
       </div>
    );
 };

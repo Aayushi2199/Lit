@@ -2,6 +2,8 @@ import React, { Component, useState } from 'react';
 import "./login.css";
 import md5 from 'md5';
 import { useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShare, faLink, faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 
 const Login = () => {
