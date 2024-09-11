@@ -11,8 +11,8 @@ const Tab1 = () => {
          <div className="list-container">
         <h2>Asset Class</h2>
         <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
+            <li>Home loans</li>
+            <li>Education Bonds</li>
             <li>Item 3</li>
             <li>Item 4</li>
             <li>Item 1</li>

@@ -166,7 +166,7 @@ const Home = () => {
           <label for="Financial_Literacy">
             What is your financila literacy?
           </label>
-          <div className="checkbox-group2">
+          <div className="checkbox-group">
             <div className="checkbox-item">
               <input
                 type="checkbox"
@@ -230,7 +230,7 @@ const Home = () => {
             checked={quesData.riskApetite === "Low"}
             onChange={handleInputChange}
           />
-          Low
+          Low (0-5%)
           <input
             type="radio"
             name="riskApetite"
@@ -238,7 +238,7 @@ const Home = () => {
             checked={quesData.riskApetite === "Medium"}
             onChange={handleInputChange}
           />
-          Medium
+          Medium (6-20%)
           <input
             type="radio"
             name="riskApetite"
